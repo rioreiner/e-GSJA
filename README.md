@@ -1,59 +1,278 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sistem Informasi Manajemen Gereja
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Deskripsi
 
-## About Laravel
+Sistem Informasi Manajemen Gereja merupakan aplikasi berbasis web yang dirancang untuk membantu pengelolaan administrasi dan pelayanan gereja secara terintegrasi. Sistem ini dibangun menggunakan Laravel 12 dan MySQL untuk mempermudah pengelolaan data jemaat, jadwal ibadah, pelayanan, keuangan, berita, event, dan galeri gereja.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Aplikasi ini menyediakan halaman publik yang dapat diakses oleh jemaat serta halaman administrator untuk mengelola seluruh data dan informasi gereja.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Fitur Utama
 
-## Learning Laravel
+### Halaman Publik
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+* Beranda gereja
+* Profil gereja
+* Informasi jadwal ibadah
+* Daftar pelayanan gereja
+* Informasi keuangan gereja
+* Berita dan artikel gereja
+* Event dan kegiatan gereja
+* Galeri foto kegiatan gereja
+* Detail berita
+* Detail event
+* Detail jadwal pelayanan
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Halaman Admin
 
-## Laravel Sponsors
+#### Dashboard
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+* Statistik jemaat
+* Statistik keuangan
+* Ringkasan data gereja
 
-### Premium Partners
+#### Manajemen Jemaat
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+* Tambah data jemaat
+* Edit data jemaat
+* Hapus data jemaat
+* Restore data jemaat
+* Upload foto jemaat
+* Export PDF
+* Export Excel
 
-## Contributing
+#### Manajemen Jadwal Ibadah
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* Tambah jadwal
+* Edit jadwal
+* Hapus jadwal
+* Detail jadwal
 
-## Code of Conduct
+#### Manajemen Pelayanan
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+* Tambah data pelayanan
+* Edit pelayanan
+* Hapus pelayanan
+* Export PDF
 
-## Security Vulnerabilities
+#### Manajemen Keuangan
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+* Pencatatan pemasukan
+* Pencatatan pengeluaran
+* Laporan keuangan
+* Dashboard keuangan
+* Export PDF laporan
 
-## License
+#### Manajemen Berita
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+* CRUD berita
+* Upload thumbnail berita
+* SEO slug otomatis
+
+#### Manajemen Event
+
+* CRUD event
+* Upload banner event
+* Detail event publik
+
+#### Manajemen Galeri
+
+* Upload foto galeri
+* Hapus foto galeri
+* Tampilan galeri publik
+
+---
+
+## Teknologi yang Digunakan
+
+### Backend
+
+* PHP 8.2+
+* Laravel 12
+
+### Frontend
+
+* Blade Template
+* Tailwind CSS
+* Alpine.js
+* Chart.js
+
+### Database
+
+* MySQL
+
+### Library Tambahan
+
+* Spatie Laravel Permission
+* Laravel DomPDF
+* Laravel Excel
+* Carbon
+
+---
+
+## Struktur Modul
+
+### Public Module
+
+* Home
+* Berita
+* Event
+* Jadwal Ibadah
+* Keuangan
+* Galeri
+
+### Admin Module
+
+* Dashboard
+* Jemaat
+* Jadwal Ibadah
+* Pelayanan
+* Keuangan
+* Berita
+* Event
+* Galeri
+
+---
+
+## Instalasi
+
+### Clone Repository
+
+```bash
+git clone https://github.com/username/sistem-gereja.git
+cd sistem-gereja
+```
+
+### Install Dependency
+
+```bash
+composer install
+npm install
+```
+
+### Salin File Environment
+
+```bash
+cp .env.example .env
+```
+
+### Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+### Konfigurasi Database
+
+Edit file `.env`
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=sistem_gereja
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### Jalankan Migration
+
+```bash
+php artisan migrate
+```
+
+### Jalankan Seeder (Jika Ada)
+
+```bash
+php artisan db:seed
+```
+
+### Jalankan Storage Link
+
+```bash
+php artisan storage:link
+```
+
+### Build Asset Frontend
+
+```bash
+npm run build
+```
+
+atau
+
+```bash
+npm run dev
+```
+
+### Jalankan Server
+
+```bash
+php artisan serve
+```
+
+## Hak Akses
+
+Saat ini sistem menggunakan satu role utama:
+
+### Admin
+
+Admin memiliki akses penuh untuk:
+
+* Mengelola jemaat
+* Mengelola jadwal ibadah
+* Mengelola pelayanan
+* Mengelola keuangan
+* Mengelola berita
+* Mengelola event
+* Mengelola galeri
+* Mengakses dashboard administrasi
+
+---
+
+## Pengujian Sistem
+
+Metode pengujian yang digunakan adalah Black Box Testing.
+
+Modul yang diuji:
+
+* Login
+* Dashboard
+* Jemaat
+* Jadwal Ibadah
+* Pelayanan
+* Keuangan
+* Berita
+* Event
+* Galeri
+
+Hasil pengujian menunjukkan seluruh fungsi utama berjalan sesuai kebutuhan pengguna.
+
+---
+
+## Tujuan Pengembangan
+
+Sistem ini dikembangkan untuk:
+
+1. Mempermudah pengelolaan data jemaat.
+2. Mempermudah pengelolaan jadwal ibadah dan pelayanan.
+3. Mempermudah pencatatan keuangan gereja.
+4. Menjadi pusat informasi gereja yang terintegrasi.
+5. Meningkatkan efisiensi administrasi gereja.
+
+---
+
+## Pengembang
+
+Proyek Akhir ITB STIKOM AMBON
+
+Program Studi Sistem Informasi
+
+Tahun 2026
+
+---
+
+## Lisensi
+
+Aplikasi ini dibuat untuk kebutuhan akademik dan pengembangan Sistem Informasi Manajemen Gereja.
