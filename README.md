@@ -1,8 +1,8 @@
-# Sistem Informasi Manajemen Gereja
+# e-GSJA
 
 ## Deskripsi
 
-Sistem Informasi Manajemen Gereja merupakan aplikasi berbasis web yang dirancang untuk membantu pengelolaan administrasi dan pelayanan gereja secara terintegrasi. Sistem ini dibangun menggunakan Laravel 12 dan MySQL untuk mempermudah pengelolaan data jemaat, jadwal ibadah, pelayanan, keuangan, berita, event, dan galeri gereja.
+e-GSJA merupakan aplikasi berbasis web yang dirancang untuk membantu pengelolaan administrasi dan pelayanan gereja secara terintegrasi. Sistem ini dibangun menggunakan Laravel 12 dan MySQL untuk mempermudah pengelolaan data jemaat, jadwal ibadah, pelayanan, keuangan, berita, event, dan galeri gereja.
 
 Aplikasi ini menyediakan halaman publik yang dapat diakses oleh jemaat serta halaman administrator untuk mengelola seluruh data dan informasi gereja.
 
